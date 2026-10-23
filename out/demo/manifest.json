@@ -1,0 +1,22 @@
+{
+  "config": {
+    "average_friends": 2.0,
+    "max_depth": 3,
+    "min_answer_probability": 1e-09,
+    "questions": 30,
+    "seed": 7,
+    "size": 20
+  },
+  "files": {
+    "corpus": "corpus.jsonl",
+    "program": "program.pl",
+    "questions": "questions.jsonl"
+  },
+  "format_version": 1,
+  "generated": {
+    "articles": 20,
+    "base_facts": 94,
+    "questions": 30
+  },
+  "semantics": "Each p::fact is an independent Bernoulli random variable under ProbLog distribution semantics. Each generated question denotes one grounded event and its answer is that event's marginal probability."
+}

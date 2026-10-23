@@ -1,0 +1,28 @@
+{
+  "config": {
+    "average_friends": 2.0,
+    "max_depth": 2,
+    "min_answer_probability": 1e-09,
+    "question_types": [
+      "posterior",
+      "conditional"
+    ],
+    "questions": 30,
+    "report_false_positive_rate": 0.05,
+    "report_sensitivity": 0.9,
+    "seed": 7,
+    "size": 10
+  },
+  "files": {
+    "corpus": "corpus.jsonl",
+    "program": "program.pl",
+    "questions": "questions.jsonl"
+  },
+  "format_version": 1,
+  "generated": {
+    "articles": 10,
+    "base_facts": 85,
+    "questions": 30
+  },
+  "semantics": "Relationship facts are independent Bernoulli variables; each job and hobby is a mutually exclusive annotated disjunction under ProbLog distribution semantics. Questions ask for prior, conditional, noisy-observation posterior, joint, disjunctive, or comparative event probabilities."
+}
