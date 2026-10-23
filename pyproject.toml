@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "prob-phantom-wiki"
+version = "0.1.0"
+description = "Generate probabilistic fictional wikis and CFG-derived QA datasets backed by ProbLog"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = ["problog>=2.2.6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+prob-phantom-wiki = "prob_phantom_wiki.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/prob_phantom_wiki"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
